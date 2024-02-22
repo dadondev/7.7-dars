@@ -1,0 +1,147 @@
+button {
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  justify-content: space-between;
+  max-height: auto;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.texts {
+  max-width: 563px;
+}
+.texts h1 {
+  font-size: 72px;
+  color: rgba(54, 83, 107, 1);
+  font-family: serif;
+  font-weight: 700;
+}
+.hero img {
+  max-height: 700px;
+  height: 100%;
+}
+form {
+  position: relative;
+  max-width: 445px;
+  margin-top: 20px;
+  width: 100%;
+}
+form > input {
+  outline: none;
+  color: 15px;
+  width: 100%;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  padding: 0 170px 0 20px;
+}
+form > input::placeholder {
+  font-weight: 700;
+  color: gray;
+}
+form > input:focus {
+  overflow: none;
+}
+form > button {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+  padding: 1rem 1.3rem;
+  color: white;
+  font-size: 15px;
+  background-color: rgba(186, 66, 112, 1);
+}
+.logos {
+  display: grid;
+  grid-template-columns: 445px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.company {
+  color: white;
+  margin-top: 30px;
+  background-color: rgba(27, 38, 47, 1);
+  padding: 3rem;
+  margin-bottom: 30px;
+}
+.company-logos {
+  display: grid;
+  gap: 20px;
+}
+.company-about > h1 {
+  font-family: serif;
+  margin-bottom: 15px;
+  font-size: 46px;
+}
+.company-top,
+.company-bottom {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.company-about > p {
+  font-size: 15px;
+  color: rgba(251, 252, 254, 1);
+  margin-bottom: 20px;
+}
+.company-about > button {
+  border: 3px solid white;
+  padding: 1rem 1.5rem;
+  background: inherit;
+  transition: all 300ms;
+  color: white;
+  border-radius: 25px;
+}
+
+/* ------------------------------------------- */
+.coding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (hover: hover) {
+  .company-about > button:hover {
+    background-color: white;
+    color: black;
+  }
+}
+@media (width<=1110px) {
+  .container {
+    max-width: 990px;
+  }
+}
+@media (width <=1024px) {
+  .container {
+    max-width: 890px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero > img {
+    max-height: 300px;
+  }
+  .texts {
+    max-width: 573px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .texts h1 {
+    text-align: center;
+    font-size: 48px;
+  }
+  form {
+    max-width: 445px;
+  }
+}

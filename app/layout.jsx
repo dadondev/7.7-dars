@@ -1,13 +1,13 @@
 import Link from "next/link";
-import styles from "./page.module.css";
+import "./page.css";
 import React from "react";
 
 const layout = ({ children }) => {
   return (
     <body>
-      <img src="/Bitmap.png" className={styles.primary} />
-      <header className={styles.container}>
-        <nav className={styles.nav}>
+      <img src="/Bitmap.png" className="primary" />
+      <header className="container">
+        <nav className="nav">
           <a href="/">
             <img
               src="/logo.svg"
@@ -27,7 +27,7 @@ const layout = ({ children }) => {
             </li>
           </ul>
         </nav>
-        <button className={styles.btn}>Schedule a Demo</button>
+        <button className="btn">Schedule a Demo</button>
       </header>
       <main>{children}</main>
     </body>
